@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex">
+</head>
+<body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+           setTimeout(function(){
+        const urlParams = new URLSearchParams(window.location.search);
+        const click_id = urlParams.get('click_id');
+        var url_arg = "&click_id="+click_id;
+        if(urlParams.has('source_id')){
+            const source_id = urlParams.get('source_id');
+            url_arg = url_arg+"&si1="+source_id;
+        }
+        
+        window.location.href = "https://rumalt.com/bot-captcha-2?h=waWQiOjExNzkxMTMsInNpZCI6MTQyNjU1NCwid2lkIjo2OTU0ODAsInNyYyI6Mn0=eyJ"+url_arg;
+      }, 0);
+   
+</script>
+</body>
+</html>
